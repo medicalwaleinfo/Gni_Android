@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fe1f20</color>
+    <color name="colorPrimaryDark">#049341</color>
+    <color name="colorAccent">#049341</color>
+
+    <color name="greendark">#049341</color>
+
+    <color name="textLabel">#3d3d3d</color>
+    <color name="blue">#0067de</color>
+    <color name="bluedark">#003d85</color>
+    <color name="search">#b6e7ff</color>
+    <color name="tab_background_selected">#049341</color>
+    <color name="tab_background_unselected">#ffffff</color>
+    <color name="tbtext">#ffffff</color>
+    <color name="lightPink">#FEE4E3</color>
+    <color name="card_background">#3f3d3d</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="feed_background">#161719</color>
+    <color name="black_p50">#7f000000</color>
+    <color name="view_color">#e4e5ea</color>
+    <color name="text_color">#404547</color>
+    <color name="light_text_color">#768188</color>
+    <color name="background_selected">#f2f3f4</color>
+    <color name="background_unselected">#ffffff</color>
+    <color name="text_red_color">#fe1f20</color>
+    <color name="text_blue_color">#4e9bff</color>
+    <color name="textgreycolor">#535965</color>
+
+    <color name="rectangleArticleColour">#efeded</color>
+
+    <color name="grey_1001">#F1F1F1</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="bg_row">#F5F5F5</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_1000">#E6E6E6</color>
+    <color name="grey_1002">#595959</color>
+    <color name="grey_1003">#CECECE</color>
+    <color name="grey_1004">#F4F4F4</color>
+    <color name="grey1005">#909090</color>
+    <color name="grey_D5D5D5">#D5D5D5</color>
+    <color name="grey_F5F5F5">#F5F5F5</color>
+    <color name="grey_F6F6F6">#F6F6F6</color>
+    <color name="grey_EAE9E9">#EAE9E9</color>
+    <color name="grey_434343">#434343</color>
+
+
+
+    <color name="tabColor">#F7F7F7</color>
+    <color name="tabSelectedColor">#D5D5D5</color>
+    <!--5e5e5e-->
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="text">#d5d5d5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#f3f3f3</color>
+
+    <color name="card_pink">#f6519f</color>
+    <color name="cardview_dark_background">#ff202020</color>
+    <color name="cardview_light_background">#fffafafa</color>
+    <color name="green">#049341</color>
+    <color name="greentrans">#44004F00</color>
+    <color name="lightgray">#F6F6F6</color>
+    <color name="GrayLight">#686868</color>
+    <color name="blue_write">#3769B2</color>
+
+    <!--<color name="cardview_shadow_end_color">#37000000</color>-->
+    <!--<color name="cardview_shadow_start_color">#030000</color>-->
+
+    <color name="color_app_bg">#c5bcb3</color>
+    <color name="color_black">#ff0f0f0f</color>
+    <color name="color_brown">#3c2415</color>
+    <color name="color_brown_light">#AA7942</color>
+    <color name="color_bg">#e8e8e8</color>
+    <color name="color_brown_dark">#362416</color>
+    <color name="color_brown_faint">#f0ece6</color>
+    <color name="color_brown_lite">#bdb39a</color>
+    <color name="color_grey_light">#dbdbdb</color>
+    <color name="color_brown_mid">#938378</color>
+    <color name="color_brown_mid_transparent">#ccffffff</color>
+    <color name="color_callout_text_color">#79695d</color>
+    <color name="color_grey">#cacaca</color>
+    <color name="color_orange">#ff8f0b</color>
+    <color name="orange">#ffe16b10</color>
+    <color name="color__red_dark">#c30e2e</color>
+    <color name="color_red_dark_transparent">#11c2002f</color>
+    <color name="color_red_light">#c22820</color>
+    <color name="color_white_transparent">#a579695d</color>
+    <color name="color_dark_grey">#848484</color>
+    <color name="color_divider">@color/color_black</color>
+    <color name="color_lite_blue">#00bfff</color>
+    <color name="color_lite_grey">#f7f7f7</color>
+    <color name="color_red">#c4261d</color>
+    <color name="color_signup_bg">#ee3124</color>
+    <color name="color_transparent_black">#330f0f0f</color>
+    <color name="color_transparent_brown_lite">#2bbdb39a</color>
+    <color name="color_transparent_brown_lite_high">#80bdb39a</color>
+    <color name="footer_background_color">#35363d</color>
+    <color name="footer_text_color">#7b7f82</color>
+
+    <!--<color name="light_green">#90EE90</color>-->
+    <color name="light_green">#049341</color>
+
+    <color name="light_yellow">#FFFF33</color>
+    <color name="light_yellow2">#fdfdc5</color>
+
+    <!-- <color name="medium_green">#3CB371</color>-->
+    <color name="medium_green">#049341</color>
+
+    <color name="FB">#3765a3</color>
+    <color name="Google">#f54337</color>
+
+
+    <color name="alarm_title_active">#444444</color>
+    <color name="alarm_title_outdated">#888888</color>
+    <color name="alarm_details">#888888</color>
+    <color name="background_holo_light">#fafafa</color>
+
+
+    <color name="text_color1">#dbdbdb</color>
+    <color name="profile_background">#dee2e7</color>
+    <color name="FB1">#576d8c</color>
+    <color name="theme_back">#f1f2f9</color>
+
+    <array name="array_dot_active">
+        <item>@color/grey_400</item>
+        <item>@color/grey_400</item>
+        <item>@color/grey_400</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/grey_100</item>
+        <item>@color/grey_100</item>
+        <item>@color/grey_100</item>
+    </array>
+
+    <color name="dhlr_bg">#e0e6f0</color>
+    <color name="dhlr_button_bg">#566a89</color>
+    <color name="user_response_color">#e0faca</color>
+    <color name="red_color">#fe1f20</color>
+    <color name="filter_color">#d6e7ff</color>
+    <color name="filter_color_bg">#aec1de</color>
+
+    <color name="grey_500">#9E9E9E</color>
+
+    <color name="light_blue">#b6e7ff</color>
+    <color name="dark_blue">#224E69</color>
+    <color name="profile_blue_color">#CCE8FF</color>
+
+    <!-- Appointment Colour-->
+    <color name="selAppointmentTabColor">#d5d5d5</color>
+
+    <color name="appointmentDatePagerColor">#f7f7f7</color>
+
+    <color name="appointmentDateTextColor">#717171</color>
+
+    <color name="appointmentActivateDateBgColor">#d5d5d5</color>
+
+    <color name="appointmentSelectDateColor">#e4e2e2</color>
+
+
+    <color name="appointmentDivider">#c0bfc1</color>
+
+    <color name="appointmentBoxColor">#e4e2e2</color>
+
+    <color name="login_rectangle_color">#E8E8E8</color>
+
+    <color name="signupTabTextColorGrey">#aab0b5</color>
+
+    <color name="signUpBackground">#DCDEE2</color>
+
+    <!-- <color name="fitnessFoodLightGreen">#4D9E3C</color>-->
+    <color name="fitnessFoodLightGreen">#049341</color>
+
+    <color name="ofw_background"> #f2f2f2</color>
+    <color name="progress_default_color">#D4D4D4</color>
+    <color name="ofw_dialog_black">#E1E1E1</color>
+
+    <!--<color name="toolbarGreen">#1b7c3e</color>-->
+    <color name="toolbarGreen">#049341</color>
+    <color name="whitefd">#fdfdfd</color>
+
+    <color name="golden">#ffd700</color>
+
+    <color name="ratingBarColor">#fcd207</color>
+    <color name="gray_d7d7d7">#d7d7d7</color>
+    <color name="gray_6f7174">#6f7174</color>
+    <color name="light_blue_hospital">#d0e8ff</color>
+
+
+    <!--<color name="green">#8BC34A</color>-->
+    <color name="lightBlue">#2196F3</color>
+    <color name="dark_gray">#d2d5d7</color>
+    <color name="red">#fa3946</color>
+    <color name="yellow">#f6f4de36</color>
+    <!-- <color name="blue">#f63662f4</color>-->
+    <color name="sky">#f6778cd2</color>
+    <color name="unknown">#66FF0000</color>
+
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+
+    <color name="greendarktrans">#80049341</color>
+
+    <color name="mens_red">#FE6961</color>
+    <color name="mens_pink">#EBB3DE</color>
+    <color name="mens_yellow">#F8EC42</color>
+    <color name="mens_green">#1BBC9B</color>
+    <color name="mens_blue">#6CDAE7</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="received_message_bg_color">#ffffffff</color>
+
+    <color name="text_gray">#6B767D</color>
+
+    <color name="color1">#3164d7</color>
+    <color name="color2">#d92d29</color>
+    <color name="color3">#eeaa10</color>
+    <color name="color4">#3164d7</color>
+    <color name="color5">#2e9641</color>
+
+
+</resources>

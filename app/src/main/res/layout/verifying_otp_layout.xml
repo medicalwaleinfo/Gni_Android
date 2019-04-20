@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/otp_iconn"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifying "
+            android:textSize="18sp"
+            android:textColor="#404547"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|right"
+            />
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 8094592998"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/indeterminateProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_margin="25dp"
+        android:indeterminate="true"
+
+        android:theme="@style/AppTheme.ProgressBar"
+        />
+
+    <TextView
+        android:id="@+id/tvCreatingOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/creating_otp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/green"
+        />
+
+    <TextView
+        android:id="@+id/tvSendingOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sending_otp_to_your_provider"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/light_text_color"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvWaitingOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waiting_for_otp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/light_text_color"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvVerifyingOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verifying_otp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/light_text_color"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
