@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 if(TedPermission.isGranted(HomeActivity.this,Manifest.permission.RECORD_AUDIO))
                 {
-                    //Show Bottom Dialog here
+                    //Show Bottom Dialog here...
                     startRecognitionQuery();
                 }
                 else
