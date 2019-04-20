@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
+import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.support.v4.content.ContextCompat;
@@ -11,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -39,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
     SpeechRecognizer speechHeyGni;
     CircleImageView ivUserImage;
     MyPrefser myPrefser;
+    ImageView btnSpeak;
 
 
     @Override
@@ -82,6 +86,54 @@ public class HomeActivity extends AppCompatActivity {
 
         final RecognitionProgressView recognitionProgressView = (RecognitionProgressView) findViewById(R.id.recognition_view);
         recognitionProgressView.setSpeechRecognizer(speech);
+
+        speechHeyGni.setRecognitionListener(new RecognitionListener() {
+            @Override
+            public void onReadyForSpeech(Bundle params) {
+
+            }
+
+            @Override
+            public void onBeginningOfSpeech() {
+
+            }
+
+            @Override
+            public void onRmsChanged(float rmsdB) {
+
+            }
+
+            @Override
+            public void onBufferReceived(byte[] buffer) {
+
+            }
+
+            @Override
+            public void onEndOfSpeech() {
+
+            }
+
+            @Override
+            public void onError(int error) {
+
+            }
+
+            @Override
+            public void onResults(Bundle results) {
+
+            }
+
+            @Override
+            public void onPartialResults(Bundle partialResults) {
+
+            }
+
+            @Override
+            public void onEvent(int eventType, Bundle params) {
+
+            }
+        });
+
         recognitionProgressView.setRecognitionListener(new RecognitionListenerAdapter() {
             @Override
             public void onResults(Bundle results) {
@@ -126,26 +178,34 @@ public class HomeActivity extends AppCompatActivity {
             requestPermissonAudio();
         }
 
-       /* findViewById(R.id.btnSpeak).setOnClickListener(new View.OnClickListener() {
+        btnSpeak = (ImageView) findViewById(R.id.btnSpeak);
+
+
+
+
+        btnSpeak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 if(TedPermission.isGranted(HomeActivity.this,Manifest.permission.RECORD_AUDIO))
                 {
-                    startRecognitionQuery();
+                    /*startRecognitionQuery();
                     recognitionProgressView.postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             startRecognitionQuery();
                         }
-                    }, 50);
+                    }, 50);*/
+
+                    //Show Bottom Dialog here
+
                 }
                 else
                 {
                     requestPermissonAudio();
                 }
             }
-        });*/
+        });
     }
 
     private void requestPermissonAudio() {
@@ -167,7 +227,7 @@ public class HomeActivity extends AppCompatActivity {
 
         @Override
         public void onPermissionDenied(List<String> deniedPermissions) {
-
+            requestPermissonAudio();
         }
     };
 
