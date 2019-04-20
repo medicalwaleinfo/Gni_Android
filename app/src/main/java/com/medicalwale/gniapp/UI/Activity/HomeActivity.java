@@ -5,14 +5,18 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import android.support.design.widget.BottomSheetDialog;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.github.zagum.speechrecognitionview.adapters.RecognitionListenerAdapter;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
@@ -35,10 +39,15 @@ public class HomeActivity extends AppCompatActivity {
     ImageView btnSpeak;
     String wordingForWakeUpCall="";
 
+    //shreyas
+    private BottomSheetDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        
+        initView();
 
         requestPermissonAudio();
 
@@ -72,6 +81,11 @@ public class HomeActivity extends AppCompatActivity {
                 if(TedPermission.isGranted(HomeActivity.this,Manifest.permission.RECORD_AUDIO))
                 {
                     //Show Bottom Dialog here...
+
+
+                    showBottomSheetdialog();
+
+
                     startRecognitionQuery();
                 }
                 else
@@ -80,6 +94,27 @@ public class HomeActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void initView() {
+    }
+
+    private void showBottomSheetdialog() {
+
+        View view = getLayoutInflater().inflate(R.layout.pop_up_voice_command, null);
+        dialog = new BottomSheetDialog(this);
+        dialog.setContentView(view);
+        dialog.setCanceledOnTouchOutside(true);
+        dialog.setCancelable(true);
+        dialog.show();
+
+        ImageView imgLoader = view.findViewById(R.id.imgLoader);
+        Glide.with(this).load(R.drawable.gifloadernew).into(imgLoader);
+
+
+
+
+
     }
 
     private void setUserProfile() {
